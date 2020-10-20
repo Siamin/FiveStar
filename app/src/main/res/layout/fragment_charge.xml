@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fragmentChargeHamrahaval"
+                android:layout_width="@dimen/sizeImage"
+                android:layout_height="@dimen/sizeImage"
+                android:layout_margin="3dp"
+                android:background="@drawable/button_border_toggle"
+                android:src="@drawable/hamrahaval" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fragmentChargeIrancell"
+                android:layout_width="@dimen/sizeImage"
+                android:layout_height="@dimen/sizeImage"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_unselected"
+                android:src="@drawable/irancell" />
+
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/fragmentChargeRightell"
+                android:layout_width="@dimen/sizeImage"
+                android:layout_height="@dimen/sizeImage"
+                android:layout_margin="3dp"
+                android:background="@drawable/bg_unselected"
+                android:src="@drawable/raicell" />
+
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/fragmentChargeCode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/farsi"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/edittext"
+        android:hint="*141*#xxxxxxx#"
+        android:inputType="number" />
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragmentChargeSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="AddNewSystem"
+        android:gravity="center"
+        android:elevation="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="30dp"
+        app:cardBackgroundColor="@color/colorRed"
+        app:cardCornerRadius="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="@font/farsi"
+            android:layout_marginLeft="25dp"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorWhite"
+            android:drawableRight="@drawable/ic_send_white_24dp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/Send"/>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

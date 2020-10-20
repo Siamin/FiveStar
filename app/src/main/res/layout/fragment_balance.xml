@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/balanceHamrahaval"
+            android:layout_width="@dimen/sizeImage"
+            android:layout_height="@dimen/sizeImage"
+            android:layout_margin="3dp"
+            android:background="@drawable/button_border_toggle"
+            android:src="@drawable/hamrahaval" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/balanceIrancell"
+            android:layout_width="@dimen/sizeImage"
+            android:layout_height="@dimen/sizeImage"
+            android:layout_margin="3dp"
+            android:background="@drawable/bg_unselected"
+            android:src="@drawable/irancell" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/balanceRightell"
+            android:layout_width="@dimen/sizeImage"
+            android:layout_height="@dimen/sizeImage"
+            android:layout_margin="3dp"
+            android:background="@drawable/bg_unselected"
+            android:src="@drawable/raicell" />
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragmentBalanceSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:onClick="AddNewSystem"
+        app:cardBackgroundColor="@color/colorRed"
+        app:cardCornerRadius="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/farsi"
+            android:drawableRight="@drawable/ic_send_white_24dp"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorWhite"
+            android:gravity="center"
+            android:text="@string/Send"
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp" />
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

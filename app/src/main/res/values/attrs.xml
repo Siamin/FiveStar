@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwitchBtnView">
+        <attr name="BgColor" format="color" />
+        <attr name="display" format="boolean" />
+    </declare-styleable>
+</resources>

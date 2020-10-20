@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E15B52</color>
+    <color name="colorPrimaryDark">#F44336</color>
+    <color name="colorAccent">#ED6459</color>
+    <color name="colorPrimaryLite">#B7E15B52</color>
+
+
+    <color name="colorToolbar">#e8ebf1</color>
+    <color name="colorToolbarMain">#eb001b</color>
+
+    <color name="colorWhite">#fff</color>
+    <color name="colorGreen">#4CAF50</color>
+    <color name="colorRed">#eb001b</color>
+    <color name="colorBlueDark">#465de2</color>
+    <color name="colorBlue">#3F51B5</color>
+    <color name="colorBlueLite">#96d0fd</color>
+    <color name="colorYellow">#FF9800</color>
+    <color name= "colorYellowLite">#ffdf00</color>
+    <color name="colorGary">#5C5B5B</color>
+    <color name="colorGaryLite1">#bdc3cb</color>
+    <color name="colorGaryLite11">#74979696</color>
+
+    <color name="colorGaryLite2">#565762</color>
+    <color name="colorGaryLite">#f9f9f9</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTextDialog">@color/colorGaryLite2</color>
+    <color name="colorBackgroundDialog">@color/colorPrimaryDark</color>
+
+
+    <color name="google_red">#EA4335</color>
+    <color name="google_yellow">#FBBC05</color>
+    <color name="google_blue">#4285F4</color>
+    <color name="google_green">#34A853</color>
+
+
+    <color name="accent">#897dae</color>
+    <color name="accentLight">#ff988db6</color>
+    <color name="background">#eeeeee</color>
+    <color name="lightGray">#e6e6e6</color>
+    <color name="textLightGray">#8f8f8f</color>
+    <color name="textGreyHeader">#ff818181</color>
+    <color name="notificationContentText">#737373</color>
+    <color name="error">#da1b21</color>
+    <color name="iconTint">#8e8e8e</color>
+    <color name="default_colour_grey">#8e8e8e</color>
+    <color name="emptyColour">#bababa</color>
+    <color name="NotificationTitle">#ffffff</color>
+</resources>

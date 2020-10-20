@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="8dp"/>
+
+        <include layout="@layout/view_spinners"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:id="@+id/detilesPhoneNumbeInquiry"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/Inquiry"
+            android:fontFamily="@font/farsi"
+            android:gravity="center"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+
+
+
+    <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+        android:id="@+id/detilesPhoneNumbeToggleSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:textSize="9dp"
+        custom:toggleWidth="115dp"
+        android:layoutDirection="ltr"
+        custom:activeBgColor="@color/colorPrimary"
+        custom:activeTextColor="@android:color/white"
+        custom:inactiveBgColor="@android:color/white"
+        custom:inactiveTextColor="@android:color/black"
+        custom:separatorColor="@color/gray_very_light"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/detilesPhoneNumbeRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

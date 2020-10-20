@@ -1,0 +1,340 @@
+<resources>
+    <string name="app_name">FiveStar</string>
+    <string name="companyName">Five Star</string>
+    <string name="mainDescription">صنایع امنیتی و حفاظتی</string>
+    <string name="Inquiry">استعلام</string>
+    <string name="All">همه</string>
+    <string name="DoYouChangeLanguage">آیا میخواهید زبان سیستم را تغییر دهید؟</string>
+
+    <!--  splash screan  -->
+    <string name="Version">نسخه:</string>
+
+    <!--  login  -->
+    <string name="pageNameLogin">ورود</string>
+    <string name="password">رمز عبور</string>
+    <string name="loginButton">@string/pageNameLogin</string>
+
+
+    <!--  first setting  -->
+    <string name="pageNameFirstSetting">تنظیمات</string>
+    <string name="systemName">نام سیستم</string>
+    <string name="phoneNumber">شماره تلفن</string>
+    <string name="pinCode">پین کد</string>
+    <string name="pinNewCode">پین کد جدید</string>
+    <string name="pinConfirmCode">تکرار پین کد جدید</string>
+    <string name="register">ثبت</string>
+    <string name="titleFirstSetting">@string/pageNameFirstSetting</string>
+    <string name="firstRunDialogBtnOk">فعال</string>
+    <string name="firstRunDialogBtnCancel">الان نه</string>
+    <string name="firstRunDialogTitle">تنظیم رمز عبور</string>
+    <string name="firstRunDialogBody">آیا میخواهید برای برنامه رمز عبور تنظیم کنید؟</string>
+
+    <!-- Error  -->
+    <string name="pleaseEnterPinCode">لطفا پین کد را وارد کنید</string>
+    <string name="worngPinCode">پین کد صحیح نمی باشید</string>
+    <string name="lenghtCharPin">تعداد رقم های پین کد ۴ رقم باید باشد</string>
+
+    <string name="wrongNewPinAndConfirm">پبن کد جدید و تکرار آن یکسان نمی باشد.</string>
+    <string name="pleaseEnterPhoneNumber">لطفا شماره تلفن را وارد کنید</string>
+    <string name="pleaseEnterSystem">لطفا نام سیستم را وارد کنید</string>
+    <string name="pleaseSelectedModelSystem">لطفا مدل سیستم را انتخاب کنید</string>
+    <string name="DeviceSuccessfullyAdded">سیستم با موفقیت اضافه شد</string>
+    <string name="DeviceSuccessfullyEdited">سیستم با موفقیت ویرایش شد</string>
+    <string name="DeviceSuccessfullyDeleted">سیستم با موفقیت حذف شد</string>
+
+    <string name="passwordNotMatchConfirmPassword">رمز عبور جدید و تکرار آن یکسان نمی باشد</string>
+    <string name="correctOldPassword">رمز عبور قبلی صحیح نمی باشد</string>
+    <string name="errorChangePassword">خطا در انجام تغییر رمز عبور</string>
+    <string name="errorSetPassword">خطا در انجام تنظیم رمز عبور</string>
+    <string name="errorRemovePassword">خطا در انجام حذف رمز عبور</string>
+
+    <string name="succssesPassword">رمز ورود شما ثبت شد</string>
+    <string name="numberOfPasswordCharacters">تعداد کاراکترهای رمز عبور باید بیش از 5 باشد</string>
+    <string name="succssesPasswordLogin">خوش آمدید</string>
+    <string name="ErrorPasswordLogin">رمز عبور استباه است</string>
+    <string name="OldpasswordIsEmpty">رمز عبور قدیمی خالی است</string>
+    <string name="EnterNumberPhone">لطفا شماره تلفن را وارد کنید</string>
+    <string name="EnterMessage">لطفا پیام را وارد کنید</string>
+    <string name="ZonesAreOnlyUsedForGSA_208DesignModels">زون ها فقط برای مدل های طراحی GSA-208 استفاده می شود</string>
+    <string name="YouCanNotEnterMoreThan4Characters">شما نمی توانید بیشتر از ۴ کاراکتر وارد کنید.</string>
+    <string name="ErrorLenghtText">تعداد کاراکترها بیشتر از حد مجاز است</string>
+
+    <string name="Change">تغییر</string>
+
+
+    <string name="RemoteReport">گزارش ریموت</string>
+    <string name="PowerReport">گزارش برق</string>
+
+    <!--  Main  -->
+    <string name="stop">متوقف کردن</string>
+    <string name="semiActive">نیمه فعال</string>
+    <string name="deActive">غیرفعال</string>
+    <string name="Active">فعال</string>
+    <string name="Arm">فعال</string>
+    <string name="DisArm">غیرفعال</string>
+    <string name="call">تماس</string>
+    <string name="silent">بی صدا فعال</string>
+    <string name="open">باز کردن</string>
+    <string name="off">خاموش</string>
+    <string name="on">روشن</string>
+    <string name="DoorOpener">درب بازکن</string>
+    <string name="StopTheAlarmAndRestartTheSystem">توقف سیستم هشدار / راه اندازی مجدد</string>
+    <string name="pleaseSelectDevice">لطفاً دستگاه مورد نظر خود را انتخاب کنید</string>
+    <string name="BluetoothMessageIsSend">پیام ارسال شد</string>
+
+    <!--  Zones  -->
+    <string name="titleZone">زون ها</string>
+    <string name="Zone">زون</string>
+
+    <!--  Response Blutooth  -->
+    <string name="The_System_Is_PartSet">سیستم نیمه فعال است</string>
+    <string name="The_System_Is_Silent">سیستم بی صدا است</string>
+
+    <!--  Outputs  -->
+    <string name="titleOutput">خروجی</string>
+    <string name="momentary">دائمی</string>
+    <string name="Permanent">لحظه ای</string>
+
+    <!--  Help  -->
+    <string name="titleHelp">راهنما و درباره ما</string>
+    <!--  setting  -->
+    <string name="setting">@string/pageNameFirstSetting</string>
+    <string name="connectedSystems">سیستم های متصل</string>
+    <string name="textMessages">متن های پیامک</string>
+    <string name="language">زبان</string>
+    <string name="chargeAndBalance">شارژ و موجودی</string>
+    <string name="appSetting">تنظیمات برنامه</string>
+    <string name="systemPassword">رمز عبور سیستم</string>
+    <string name="AddSystem">اضافه کردن سیستم</string>
+    <string name="Charge">شارژ</string>
+    <string name="Balance">موجودی</string>
+    <string name="OldPassword">رمز عبور قدیم</string>
+    <string name="newPassword">رمز عبور جدید</string>
+    <string name="confirmNewPassword">تکرار رمز عبور جدید</string>
+    <string name="changePassword">تنظیمات رمز عبور برنامه</string>
+    <string name="changePass">تنظیمات رمز عبور</string>
+    <string name="changeLanguage">تنظیمات زبان سیستم</string>
+    <string name="Enghlis">انگلیسی</string>
+    <string name="Farsi">فارسی</string>
+    <string name="pleaseEnterCode">لطفا کد را وارد کنید.</string>
+    <string name="pleaseEnterPassword">لطفا رمز عبور را وارد کنید</string>
+
+    <!--  set password  -->
+    <string name="RemovePassword">حذف رمز عبور</string>
+    <string name="setPassword">تنظیم رمز عبور</string>
+    <string name="confirmPassword">تکرار رمز عبور</string>
+    <string name="submitPassword">ثبت رمز عبور</string>
+    <string name="submit">ثبت</string>
+
+
+    <!--  Controllers  -->
+    <string name="selectSystem">سیستم را انتخاب کنید</string>
+    <string name="selectCodeSend">کد کنترلی را انتخاب کنید</string>
+    <string name="EmptyList">لیست خالی</string>
+    <string name="BluetoothConnected">متصل به دستگاه</string>
+    <string name="NoDevicesFound">دستگاهی پیدا نشد</string>
+    <string name="succssesSend">@string/BluetoothMessageIsSend</string>
+
+
+    <!--  dialog  -->
+    <string name="blueToothListTitle">لیست دستگاه های بلوتوث</string>
+    <string name="Okey">تایید</string>
+    <string name="Add">اضافه</string>
+    <string name="Cancle">انصراف</string>
+    <string name="Delete">حذف</string>
+    <string name="areYouDeleteSystem">آیا می خواهید سیستم انتخاب شده را حذف کنید؟</string>
+
+
+    <string name="ON">@string/on</string>
+    <string name="OFF">@string/off</string>
+
+    <!--  splash screan  -->
+    <string name="Number">شماره</string>
+    <string name="Send">ارسال</string>
+    <string name="Registered">@string/register</string>
+    <string name="TitleSmsPhoneNumber">شماره پیامک</string>
+    <string name="TitleTelePhone">شماره تلفن</string>
+    <string name="TitleCallPhoneNumber">شماره سیم کارت</string>
+
+    <!--  splash screan  -->
+    <!--  splash screan  -->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">@string/setting</string>
+
+    <string name="menu_setting">@string/setting</string>
+    <string name="menu_reminder">ارسال هوشمند</string>
+    <string name="menu_help">@string/titleHelp</string>
+    <string name="menuInquiry">گزارشات</string>
+    <string name="menuOutputs">@string/titleOutput</string>
+    <string name="menuZoons">@string/titleZone</string>
+    <string name="menu_exit">خروج از برنامه</string>
+
+
+    <!--  Help  -->
+    <string name="AboutUs">
+        شرکت تولیدی - صنعتی فایو استار
+ تولید کننده انواع سیستم های امنیتی و حفاظتی و یرد های صنعتی و هوشمند و پنل کنترل های سیمکارتی به همراه ارائه خدمات پس از فروش می باشد که محصولات این شرکت به طور گسترده در سراسر ایران و کشور های همسایه توزیع می شود.از قابلیت های محصولات این شرکت می توان به طراحی مهندسی محور , کیفیت بالای قطعات , ارائه امکانات با توجه به نیاز مصرف کننده و خدمات مناسب پس از فروش اشاره کرد.
+    </string>
+    <string name="WebsiteUs">www.Fivestar.ir</string>
+    <string name="EmailUs">Fivestar.tech.co@gmail.com</string>
+
+<string name="Blutooth">بلوتوث</string>
+    <string name="Message">پیامک</string>
+    <string name="SmsMessage">ارسال پیام از طریق پیام کوتاه</string>
+    <string name="BluetoothMessage">ارسال پیام از طریق بلوتوث</string>
+
+
+    <string name="SelectSystem">@string/selectSystem</string>
+    <string name="Other">other</string>
+    <string name="GSA_208">GSA-208</string>
+    <string name="GSA_209">GSA-209</string>
+    <array name="SystemList">
+        <item>@string/selectSystem</item>
+        <item>GSA-206</item>
+        <item>GSA-207</item>
+        <item>@string/GSA_208</item>
+        <item>@string/GSA_209</item>
+        <item>@string/Other</item>
+    </array>
+
+    <array name="TitleCodeReminder">
+        <item>@string/selectCodeSend</item>
+        <item>فعال => 5</item>
+        <item>غیر فعال => 6</item>
+        <item>نیمه فعال => 7 </item>
+        <item>بی صدا => 8</item>
+
+        <item>خروجی ۱ دائمی  => 1</item>
+        <item>خروجی ۱ لحظه ای  => 1L</item>
+
+        <item>خروجی ۲ دائمی  => 2</item>
+        <item>خروجی ۲ لحظه ای  => 2L</item>
+
+        <item>خروجی ۴ دائمی  => 3</item>
+        <item>خروجی ۳ لحظه ای  => 3L</item>
+
+        <item>خروجی ۴ دائمی  => 4</item>
+        <item>خروجی ۴ لحظه ای  => 4L</item>
+    </array>
+
+    <array name="TitleCodeReminderOther">
+        <item>@string/selectCodeSend</item>
+        <item>فعال => 5</item>
+        <item>غیر فعال => 6</item>
+        <item>نیمه فعال => 7 </item>
+        <item>بی صدا => 8</item>
+
+        <item>خروجی ۱ دائمی  => 1</item>
+        <item>خروجی ۱ لحظه ای  => 1L</item>
+
+        <item>خروجی ۲ دائمی  => 2</item>
+        <item>خروجی ۲ لحظه ای  => 2L</item>
+
+        <item>خروجی ۴ دائمی  => 3</item>
+        <item>خروجی ۳ لحظه ای  => 3L</item>
+
+        <item>خروجی ۴ دائمی  => 4</item>
+        <item>خروجی ۴ لحظه ای  => 4L</item>
+
+        <item>خروجی ۵ دائمی  => 5</item>
+        <item>خروجی ۵ لحظه ای  => 5L</item>
+
+        <item>خروجی ۶ دائمی  => 6</item>
+        <item>خروجی ۶ لحظه ای  => 6L</item>
+
+        <item>خروجی ۷ دائمی  => 7</item>
+        <item>خروجی ۷ لحظه ای  => 7L</item>
+
+        <item>خروجی ۸ دائمی  => 8</item>
+        <item>خروجی ۸ لحظه ای  => 8L</item>
+
+        <item>خروجی ۹ دائمی  => 9</item>
+        <item>خروجی ۹ لحظه ای  => 9L</item>
+
+        <item>خروجی ۱۰ دائمی  => 10</item>
+        <item>خروجی ۱۰ لحظه ای  => 10L</item>
+
+        <item>خروجی ۱۱ دائمی  => 11</item>
+        <item>خروجی ۱۱ لحظه ای  => 11L</item>
+
+        <item>خروجی ۱۲ دائمی => 12</item>
+        <item>خروجی ۱۲ لحظه ای  => 12L</item>
+    </array>
+
+    <string name="about">در باره</string>
+    <string name="settings">تنظیمات</string>
+    <string name="preference_notification_category">تنظیمات اعلان</string>
+    <string name="checkbox_vibrate">لرزش</string>
+    <string name="checkbox_sound">صدا</string>
+    <string name="checkbox_LED">LED</string>
+    <string name="checkbox_ongoing">مداوم</string>
+    <string name="ongoing_detail">جلوگیری از دور شدن اعلان</string>
+    <string name="snooze">چرت زدن</string>
+    <string name="snooze_detail">اقدام به تعویق انداختن به اعلان را اضافه کنید</string>
+    <string name="snooze_length">طول چرت زدن</string>
+    <string name="mark_as_done">علامت گذاری به عنوان انجام شده است</string>
+    <string name="mark_as_done_detail">Add a \"Mark as done\" action to the notification</string>
+    <string name="nagging_reminder">یادآوری خسته کننده</string>
+    <string name="nagging_detail">اخطار فعلی را به طور مداوم به شما اطلاع دهید تا اینکه رد شود</string>
+    <string name="nagging_interval">فاصله نق زدن</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_edit">ویرایش</string>
+    <string name="action_about">@string/about</string>
+    <string name="action_show_now">اکنون نمایش دهید</string>
+    <string name="action_mark_as_done">علامت گذاری به عنوان انجام شده است</string>
+    <string name="action_share">اشتراک گذاری</string>
+    <string name="delete_confirmation">آیا مطمئن هستید که می خواهید این اعلان را حذف کنید؟</string>
+    <string name="yes">@string/Okey</string>
+    <string name="no">@string/Cancle</string>
+    <string name="ok">@string/Okey</string>
+    <string name="title">عنوان</string>
+    <string name="save_menu">ذخیره</string>
+    <string name="time_now">اکنون</string>
+    <string name="date_today">امروز</string>
+    <string name="times_shown">Shown %1$d out of %2$d times</string>
+    <string name="times_shown_edit">Shown %1$d out of</string>
+    <string name="forever">تا ابد</string>
+    <string name="no_repeat">تکرار نمی کندeat</string>
+    <string name="times">زمان</string>
+    <string name="repeat_notification">تعداد دفعات تکرار: </string>
+    <string name="content_hint">محتوای اعلان را اضافه کنید</string>
+    <string name="select_icon">نمادی را انتخاب کنید</string>
+    <string name="default_icon">نماد پیش فرض</string>
+    <string name="custom_icon">نماد سفارشی</string>
+    <string name="select_colour">یک رنگ را انتخاب کنید</string>
+    <string name="default_colour">رنگ پیش فرض</string>
+    <string name="repeats_on">تکرار در:</string>
+    <string name="repeat_every">هر بار تکرار کنید</string>
+    <string name="repeats_every">هر بار تکرار می شود: %1$d %2$s</string>
+    <string name="no_active">اعلان فعال نیست</string>
+    <string name="no_inactive">اعلان غیرفعال نیست</string>
+    <string name="toast_past_date">تاریخ اولیه را نمی توان در گذشته تنظیم کرد</string>
+    <string name="toast_higher_number">تعداد تکرار باید بیشتر باشد</string>
+    <string name="toast_title_empty">عنوان نمی تواند خالی باشد</string>
+    <string name="toast_mark_as_done">یادآوری بعدی به عنوان انجام شده علامت گذاری شد</string>
+    <string name="add_reminder">یادآوری اضافه کنید</string>
+    <string name="libraries">کتابخانه ها</string>
+    <string name="rate_app">برنامه رتبه بندی</string>
+    <string name="contact">مخاطب</string>
+    <string name="version">نسخه: </string>
+    <string name="thanks_to">با تشکر از</string>
+    <string name="translator">Tترجمه کردن</string>
+    <string name="send_email">ایمیل بفرست</string>
+
+    <string-array name="repeat_array">
+        <item>تکرار نمی کند</item>
+        <item>هر ساعت</item>
+        <item>هر روز</item>
+        <item>هر هفته</item>
+        <item>هر ماه</item>
+        <item>هر سال</item>
+        <item>روزهای خاص هفته</item>
+        <item>پیشرفته</item>
+    </string-array>
+
+</resources>

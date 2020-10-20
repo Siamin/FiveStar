@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialogs"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layoutDirection="rtl"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/dialogClose"
+                android:layout_width="100dp"
+                android:layout_height="6dp"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="8dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/colorGary"
+                android:textSize="18sp"
+                app:cardBackgroundColor="@color/colorGary" />
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+
+                <EditText
+                    android:id="@+id/dialogSystemName"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinner_border"
+                    android:drawableLeft="@drawable/ic_baseline_devices_other_24"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/farsi"
+                    android:drawableTint="@color/colorGaryLite1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/colorGaryLite"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:fontFamily="@font/farsi"
+                    android:text="@string/systemName"
+                    app:layout_anchor="@id/dialogSystemName"
+                    app:layout_anchorGravity="top|right" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/dialogPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinner_border"
+                    android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+                    android:drawablePadding="8dp"
+                    android:fontFamily="@font/farsi"
+                    android:drawableTint="@color/colorGaryLite1"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:padding="10dp" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/colorGaryLite"
+                    android:paddingLeft="8dp"
+                    android:fontFamily="@font/farsi"
+                    android:paddingRight="8dp"
+                    android:text="@string/phoneNumber"
+                    app:layout_anchor="@id/dialogPhoneNumber"
+                    app:layout_anchorGravity="top|right" />
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/dialogPincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinner_border"
+                    android:drawableLeft="@drawable/ic_baseline_fiber_pin_24"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/colorGaryLite1"
+                    android:ems="10"
+                    android:fontFamily="@font/farsi"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/colorGaryLite"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:fontFamily="@font/farsi"
+                    android:text="@string/pinCode"
+                    app:layout_anchor="@id/dialogPincode"
+                    app:layout_anchorGravity="top|right" />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/relativSpinnerdialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinner_border"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/dialogSpinnerDevice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:paddingRight="35dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/ic_arrow_down" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/colorGaryLite"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:fontFamily="@font/farsi"
+                    android:text="@string/selectSystem"
+                    app:layout_anchor="@id/relativSpinnerdialog"
+                    app:layout_anchorGravity="top|right" />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+            <LinearLayout
+                android:id="@+id/dialoglayoutcheckbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:fontFamily="@font/farsi"
+                    android:text="@string/changePass"
+                    android:textColor="@color/colorBlack" />
+
+                <CheckBox
+                    android:id="@+id/dialogcheckbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+
+            </LinearLayout>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/dialogLayoutNewPincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+
+                <EditText
+                    android:id="@+id/dialogNewPincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/farsi"
+                    android:background="@drawable/spinner_border"
+                    android:drawableLeft="@drawable/ic_baseline_fiber_pin_24"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/colorGaryLite1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/colorGaryLite"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:fontFamily="@font/farsi"
+                    android:text="@string/pinNewCode"
+                    app:layout_anchor="@id/dialogNewPincode"
+                    app:layout_anchorGravity="top|right" />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:id="@+id/dialogLayoutConfirmPincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+
+                <EditText
+                    android:id="@+id/dialogConfirmPincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinner_border"
+                    android:drawableLeft="@drawable/ic_baseline_fiber_pin_24"
+                    android:drawablePadding="8dp"
+                    android:drawableTint="@color/colorGaryLite1"
+                    android:ems="10"
+                    android:fontFamily="@font/farsi"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/colorGaryLite"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:fontFamily="@font/farsi"
+                    android:text="@string/pinConfirmCode"
+                    app:layout_anchor="@id/dialogConfirmPincode"
+                    app:layout_anchorGravity="top|right" />
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:onClick="AddNewSystem"
+                android:orientation="horizontal"
+                app:cardBackgroundColor="@color/colorRed"
+                app:cardCornerRadius="15dp">
+
+
+                <TextView
+                    android:id="@+id/dialogAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:fontFamily="@font/farsi"
+                    android:text="@string/save_menu"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</FrameLayout>
+
+

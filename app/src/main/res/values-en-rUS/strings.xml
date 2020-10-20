@@ -1,0 +1,338 @@
+<resources>
+    <string name="app_name">FiveStar</string>
+    <string name="companyName">Five Star</string>
+    <string name="mainDescription">security system</string>
+    <string name="Inquiry">Inquiry</string>
+    <string name="All">All</string>
+    <string name="DoYouChangeLanguage">Do you want to change the Language?</string>
+
+    <!--  splash screan  -->
+    <string name="Version">Version:</string>
+
+    <!--  login  -->
+    <string name="pageNameLogin">Login</string>
+    <string name="password">password</string>
+    <string name="loginButton">Login</string>
+
+    <!--  first setting  -->
+    <string name="pageNameFirstSetting">First setting</string>
+    <string name="systemName">System name</string>
+    <string name="phoneNumber">phone number</string>
+    <string name="pinCode">Pin code</string>
+    <string name="pinNewCode">New pin code</string>
+    <string name="pinConfirmCode">Confirm pin code</string>
+    <string name="register">Register</string>
+    <string name="titleFirstSetting">Base setting</string>
+    <string name="firstRunDialogBtnOk">activede</string>
+    <string name="firstRunDialogBtnCancel">not now</string>
+    <string name="firstRunDialogTitle">Active Password</string>
+    <string name="firstRunDialogBody">Do you want to set a password for the app?</string>
+
+    <!-- Error  -->
+    <string name="pleaseEnterPinCode">Please Enter Pin Code</string>
+    <string name="worngPinCode">The PIN code is incorrect</string>
+    <string name="lenghtCharPin">The number of PIN codes must be 4 digits</string>
+
+    <string name="wrongNewPinAndConfirm">New PIN and Confirm it wrong</string>
+    <string name="pleaseEnterPhoneNumber">Please Enter Phone Number</string>
+    <string name="pleaseEnterSystem">Please Enter System name</string>
+    <string name="pleaseSelectedModelSystem">Please select the device model</string>
+    <string name="DeviceSuccessfullyAdded">Device successfully added</string>
+    <string name="DeviceSuccessfullyEdited">Device successfully edited</string>
+    <string name="DeviceSuccessfullyDeleted">Device successfully deleted</string>
+
+    <string name="passwordNotMatchConfirmPassword">Your password Confirm password does not match</string>
+    <string name="correctOldPassword">Your previous password is not correct</string>
+    <string name="errorChangePassword">Error performing password change</string>
+    <string name="errorSetPassword">Error performing password set</string>
+    <string name="errorRemovePassword">Error performing password set</string>
+
+    <string name="succssesPassword">Your password was registered.</string>
+    <string name="numberOfPasswordCharacters">The number of password characters must be more than 5</string>
+    <string name="succssesPasswordLogin">Wellcom</string>
+    <string name="ErrorPasswordLogin">Wrong password.</string>
+    <string name="OldpasswordIsEmpty">oldPassword is Empty</string>
+    <string name="EnterNumberPhone">Please Enter number Phone</string>
+    <string name="EnterMessage">Please Enter message </string>
+    <string name="ZonesAreOnlyUsedForGSA_208DesignModels">Zones are only used for GSA-208 design models</string>
+    <string name="YouCanNotEnterMoreThan4Characters">You can not enter more than 4 characters</string>
+    <string name="ErrorLenghtText">The number of characters is more than allowed</string>
+
+
+    <!--  Main  -->
+    <string name="stop">Stop</string>
+    <string name="semiActive">Part Set</string>
+    <string name="deActive">Deactive</string>
+    <string name="Active">Active</string>
+    <string name="Arm">Arm</string>
+    <string name="DisArm">DisArm</string>
+    <string name="call">Call</string>
+    <string name="silent">Silent</string>
+    <string name="open">Open</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="DoorOpener">Opener</string>
+    <string name="StopTheAlarmAndRestartTheSystem">Stop alarm/restart system</string>
+    <string name="pleaseSelectDevice">Please select the device of your choice</string>
+    <string name="BluetoothMessageIsSend">Message Send</string>
+
+    <!--  Zones  -->
+    <string name="titleZone">Zone</string>
+    <string name="Zone">Zone</string>
+
+
+    <!--  Response Blutooth  -->
+    <string name="The_System_Is_PartSet">The System is PartSet</string>
+    <string name="The_System_Is_Silent">The System is Silent</string>
+
+
+    <!--  Outputs  -->
+    <string name="titleOutput">Output</string>
+    <string name="Permanent">Permanent</string>
+    <string name="momentary">Momentary</string>
+
+    <!--  Help  -->
+    <string name="titleHelp">Help</string>
+    <!--  setting  -->
+    <string name="setting">setting</string>
+    <string name="connectedSystems">Connected Systems</string>
+    <string name="textMessages">Text Messages</string>
+    <string name="language">Language</string>
+    <string name="chargeAndBalance">Charge &amp; Balance</string>
+    <string name="appSetting">Setting application</string>
+    <string name="systemPassword">system Password</string>
+    <string name="AddSystem">Add System</string>
+    <string name="Charge">Charge</string>
+    <string name="Balance">Balance</string>
+    <string name="OldPassword">old Password</string>
+    <string name="newPassword">new Password</string>
+    <string name="confirmNewPassword">Confirm new Password</string>
+    <string name="changePassword">change Application Password</string>
+    <string name="changePass">change Password</string>
+    <string name="changeLanguage">change Application Language</string>
+    <string name="Enghlis">English</string>
+    <string name="Farsi">Farsi</string>
+    <string name="pleaseEnterCode">please enter Code</string>
+    <string name="pleaseEnterPassword">Please enter the password</string>
+
+    <!--  set password  -->
+    <string name="RemovePassword">remove password</string>
+    <string name="setPassword">Set Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="submitPassword">Submit Password</string>
+    <string name="submit">Submit</string>
+
+
+    <!--  Controllers  -->
+    <string name="selectSystem">Select system</string>
+    <string name="selectCodeSend">Select Code</string>
+    <string name="EmptyList">Empty List</string>
+    <string name="BluetoothConnected">connected to device</string>
+    <string name="NoDevicesFound">No devices found</string>
+    <string name="succssesSend">send Message</string>
+
+
+    <!--  dialog  -->
+    <string name="blueToothListTitle">Bluetooth List</string>
+    <string name="Okey">okey</string>
+    <string name="Add">Add</string>
+    <string name="Cancle">Cancle</string>
+    <string name="Delete">Delete</string>
+    <string name="areYouDeleteSystem">Do you want to delete the selected system?</string>
+
+
+    <string name="ON">ON</string>
+    <string name="OFF">OFF</string>
+
+    <!--  splash screan  -->
+    <string name="Number">number</string>
+    <string name="Send">send</string>
+    <string name="Registered">register</string>
+    <string name="TitleSmsPhoneNumber">Sms Number</string>
+    <string name="TitleTelePhone">Telephone Number</string>
+    <string name="TitleCallPhoneNumber">SIM Card Number</string>
+
+    <string name="RemoteReport">Remote report</string>
+    <string name="PowerReport">Power report</string>
+
+    <!--  splash screan  -->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_setting">@string/setting</string>
+    <string name="menu_reminder">Automatic</string>
+    <string name="menu_help">Help</string>
+    <string name="menuInquiry">Report</string>
+    <string name="menuOutputs">@string/titleOutput</string>
+    <string name="menuZoons">@string/titleZone</string>
+    <string name="menu_exit">Exit Application</string>
+
+
+    <string name="Blutooth">Blutooth</string>
+    <string name="Message">Message</string>
+    <string name="SmsMessage">Sending message by SMS</string>
+    <string name="BluetoothMessage">Sending a message by Bluetooth</string>
+    <!--  Help  -->
+    <string name="AboutUs">
+        شرکت تولیدی - صنعتی فایو استار
+ تولید کننده انواع سیستم های امنیتی و حفاظتی و یرد های صنعتی و هوشمند و پنل کنترل های سیمکارتی به همراه ارائه خدمات پس از فروش می باشد که محصولات این شرکت به طور گسترده در سراسر ایران و کشور های همسایه توزیع می شود.از قابلیت های محصولات این شرکت می توان به طراحی مهندسی محور , کیفیت بالای قطعات , ارائه امکانات با توجه به نیاز مصرف کننده و خدمات مناسب پس از فروش اشاره کرد.
+    </string>
+    <string name="WebsiteUs">www.Fivestar.ir</string>
+    <string name="EmailUs">Fivestar.tech.co@gmail.com</string>
+
+    <string name="Change">Change</string>
+
+
+    <string name="SelectSystem">Select System</string>
+    <string name="Other">other</string>
+    <string name="GSA_208">GSA-208</string>
+    <string name="GSA_209">GSA-209</string>
+    <array name="SystemList">
+        <item>selected system model</item>
+        <item>GSA-206</item>
+        <item>GSA-207</item>
+        <item>@string/GSA_208</item>
+        <item>@string/GSA_209</item>
+        <item>@string/Other</item>
+    </array>
+
+    <array name="TitleCodeReminder">
+        <item>@string/selectCodeSend</item>
+        <item>Active => 5</item>
+        <item>Deactive => 6</item>
+        <item>Semi-active => 7 </item>
+        <item>Silent => 8</item>
+
+        <item>Output1 Permanent  => 1</item>
+        <item>Output1 Momentary  => 1L</item>
+
+        <item>Output2 Permanent  => 2</item>
+        <item>Output2 Momentary  => 2L</item>
+
+        <item>Output3 Permanent  => 3</item>
+        <item>Output3 Momentary  => 3L</item>
+
+        <item>Output4 Permanent  => 4</item>
+        <item>Output4 Momentary  => 4L</item>
+    </array>
+
+    <array name="TitleCodeReminderOther">
+        <item>@string/selectCodeSend</item>
+        <item>Active => 5</item>
+        <item>Deactive => 6</item>
+        <item>Semi-active => 7 </item>
+        <item>Silent => 8</item>
+
+        <item>Output1 Permanent  => 1</item>
+        <item>Output1 Momentary  => 1L</item>
+
+        <item>Output2 Permanent  => 2</item>
+        <item>Output2 Momentary  => 2L</item>
+
+        <item>Output3 Permanent  => 3</item>
+        <item>Output3 Momentary  => 3L</item>
+
+        <item>Output4 Permanent  => 4</item>
+        <item>Output4 Momentary  => 4L</item>
+
+        <item>Output5 Permanent  => 5</item>
+        <item>Output5 Momentary  => 5L</item>
+
+        <item>Output6 Permanent  => 6</item>
+        <item>Output6 Momentary  => 6L</item>
+
+        <item>Output7 Permanent  => 7</item>
+        <item>Output7 Momentary  => 7L</item>
+
+        <item>Output8 Permanent  => 8</item>
+        <item>Output8 Momentary  => 8L</item>
+
+        <item>Output9 Permanent  => 9</item>
+        <item>Output9 Momentary  => 9L</item>
+
+        <item>Output10 Permanent  => 10</item>
+        <item>Output10 Momentary  => 10L</item>
+
+        <item>Output11 Permanent  => 11</item>
+        <item>Output11 Momentary  => 11L</item>
+
+        <item>Output12 Permanent  => 12</item>
+        <item>Output12 Momentary  => 12L</item>
+    </array>
+
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="preference_notification_category">Notification Preferences</string>
+    <string name="checkbox_vibrate">Vibrate</string>
+    <string name="checkbox_sound">Sound</string>
+    <string name="checkbox_LED">LED</string>
+    <string name="checkbox_ongoing">Persistent</string>
+    <string name="ongoing_detail">Prevent notification from being swiped away</string>
+    <string name="snooze">Snooze</string>
+    <string name="snooze_detail">Add a snooze action to the notification</string>
+    <string name="snooze_length">Snooze length</string>
+    <string name="mark_as_done">Mark as done</string>
+    <string name="mark_as_done_detail">Add a \"Mark as done\" action to the notification</string>
+    <string name="nagging_reminder">Nagging reminder</string>
+    <string name="nagging_detail">Continuously notify you of the current notification until it is dismissed</string>
+    <string name="nagging_interval">Nagging interval</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_about">About</string>
+    <string name="action_show_now">Show now</string>
+    <string name="action_mark_as_done">Mark as done</string>
+    <string name="action_share">Share</string>
+    <string name="delete_confirmation">Are you sure you want to delete this notification?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="ok">OK</string>
+    <string name="title">Title</string>
+    <string name="save_menu">Save</string>
+    <string name="time_now">Now</string>
+    <string name="date_today">Today</string>
+    <string name="times_shown">Shown %1$d out of %2$d times</string>
+    <string name="times_shown_edit">Shown %1$d out of</string>
+    <string name="forever">Forever</string>
+    <string name="no_repeat">Does not repeat</string>
+    <string name="times">times</string>
+    <string name="repeat_notification">Number of times to repeat: </string>
+    <string name="content_hint">Add notification content</string>
+    <string name="select_icon">Select an icon</string>
+    <string name="default_icon">Default icon</string>
+    <string name="custom_icon">Custom icon</string>
+    <string name="select_colour">Select a colour</string>
+    <string name="default_colour">Default colour</string>
+    <string name="repeats_on">Repeats on:</string>
+    <string name="repeat_every">Repeat every</string>
+    <string name="repeats_every">Repeats every: %1$d %2$s</string>
+    <string name="no_active">No active notifications</string>
+    <string name="no_inactive">No inactive notifications</string>
+    <string name="toast_past_date">Cannot set initial date in the past</string>
+    <string name="toast_higher_number">Repeat number must be higher</string>
+    <string name="toast_title_empty">Title cannot be empty</string>
+    <string name="toast_mark_as_done">Marked next reminder as done</string>
+    <string name="add_reminder">Add reminder</string>
+    <string name="libraries">Libraries</string>
+    <string name="rate_app">Rate app</string>
+    <string name="contact">Contact</string>
+    <string name="version">Version: </string>
+    <string name="thanks_to">Thanks to</string>
+    <string name="translator">Translator</string>
+    <string name="send_email">Send email</string>
+    <string-array name="repeat_array">
+        <item>Does not repeat</item>
+        <item>Every hour</item>
+        <item>Every day</item>
+        <item>Every week</item>
+        <item>Every month</item>
+        <item>Every year</item>
+        <item>Specific days of the week</item>
+        <item>Advanced</item>
+    </string-array>
+
+</resources>

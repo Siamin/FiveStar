@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:fontFamily="@font/farsi"
+        android:text="@string/changePassword"
+        android:textColor="@color/colorGary"
+        android:textSize="16dp"
+        />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/fragmentLayoutAppSettingOldPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <EditText
+            android:id="@+id/fragmentAppSettingOldPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/farsi"
+            android:background="@drawable/spinner_border"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorGaryLite1"
+            android:ems="10"
+            android:textColor="@color/colorBlack"
+            android:inputType="numberPassword"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:id="@+id/adapterTextMessageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@color/colorGaryLite"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:fontFamily="@font/farsi"
+            android:text="@string/OldPassword"
+            app:layout_anchor="@id/fragmentAppSettingOldPassword"
+            app:layout_anchorGravity="top|right" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <EditText
+            android:id="@+id/fragmentAppSettingNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/spinner_border"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/colorGaryLite1"
+            android:ems="10"
+            android:fontFamily="@font/farsi"
+            android:textColor="@color/colorBlack"
+            android:inputType="numberPassword"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@color/colorGaryLite"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/newPassword"
+            android:fontFamily="@font/farsi"
+            app:layout_anchor="@id/fragmentAppSettingNewPassword"
+            app:layout_anchorGravity="top|right" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <EditText
+            android:id="@+id/fragmentAppSettingConfirmNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/spinner_border"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/farsi"
+            android:textColor="@color/colorBlack"
+            android:drawableTint="@color/colorGaryLite1"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:padding="10dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:background="@color/colorGaryLite"
+            android:paddingLeft="8dp"
+            android:fontFamily="@font/farsi"
+            android:paddingRight="8dp"
+            android:text="@string/confirmNewPassword"
+            app:layout_anchor="@id/fragmentAppSettingConfirmNewPassword"
+            app:layout_anchorGravity="top|right" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/fragmentAppSettingRemovePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/farsi"
+            android:background="@drawable/button_bg"
+            android:drawableLeft="@drawable/ic_baseline_close_24"
+            android:drawableTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:text="@string/RemovePassword"/>
+
+        <Button
+            android:id="@+id/fragmentAppSettingSetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@font/farsi"
+            android:background="@drawable/button_bg"
+            android:drawableLeft="@drawable/ic_baseline_check_24"
+            android:drawableTint="@color/colorWhite"
+            android:textColor="@color/colorWhite"
+            android:text="@string/setPassword"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorGary"/>
+
+    <LinearLayout
+        android:id="@+id/settingLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="@font/farsi"
+            android:text="@string/changeLanguage"
+            android:textColor="@color/colorGary"
+            android:textSize="16dp"
+            />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <RadioButton
+                android:id="@+id/fragmentAppSettingLanguageEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Enghlis"
+                android:fontFamily="@font/farsi"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/fragmentAppSettingLanguageFarsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Farsi"
+                android:fontFamily="@font/farsi"
+                android:onClick="onRadioButtonClicked"/>
+
+
+        </RadioGroup>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGary"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
