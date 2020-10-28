@@ -32,7 +32,7 @@ public class TextMessageAdapter extends RecyclerView.Adapter<TextMessageAdapter.
     public SystemModel systemModel;
     private String[] Chars = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
     private ValidationHelper validationHelper;
-
+    private String TAG="TAG_TextMessageAdapter";
 
     public TextMessageAdapter(Context context, List<TextMessageModel> model) {
         this.context = context;
@@ -57,7 +57,7 @@ public class TextMessageAdapter extends RecyclerView.Adapter<TextMessageAdapter.
                 String textMessage = holder.body.getText().toString();
 
                 if (!textMessage.isEmpty()) {
-                    Log.i("TAG_","validation => "+validationHelper.validateEnglish(textMessage));
+//                    Log.i(TAG,"validation => "+validationHelper.validateEnglish(textMessage));
                     if (!validationHelper.validateEnglish(textMessage) && textMessage.length() < 15) {
                         sendMessage(textMessage, position);
                     } else if (validationHelper.validateEnglish(textMessage) && textMessage.length() < 20) {
@@ -112,7 +112,6 @@ public class TextMessageAdapter extends RecyclerView.Adapter<TextMessageAdapter.
         }
 
         void bind(TextMessageModel model) {
-
             title.setText(model.Title);
             body.setText(model.Body);
 

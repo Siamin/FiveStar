@@ -2,6 +2,7 @@ package com.siamin.fivestart.adapters;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -70,7 +71,12 @@ public class BluetoothListAdapter extends RecyclerView.Adapter<BluetoothListAdap
         @Override
         public void onClick(View v) {
             dialog.dismiss();
-            bluetoothInterface.selectBluetooth(model.get(getAdapterPosition()));
+            try {
+                bluetoothInterface.selectBluetooth(model.get(getAdapterPosition()));
+            }catch (Exception e){
+                bluetoothInterface.notSelectBlutooth(false);
+            }
+
         }
 
         void bind(BluetoothModel model){
