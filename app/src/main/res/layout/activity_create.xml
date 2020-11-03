@@ -333,7 +333,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="repeatSelector"
-                    android:visibility="gone"
+                    android:visibility="visible"
                     android:background="?attr/selectableItemBackground"
                     android:paddingBottom="@dimen/table_row_default_horizontal_padding"
                     android:paddingEnd="@dimen/table_row_default_padding_side"

@@ -292,6 +292,7 @@
     <string name="no">No</string>
     <string name="ok">OK</string>
     <string name="title">Title</string>
+    <string name="titleNotification">Automatically</string>
     <string name="save_menu">Save</string>
     <string name="time_now">Now</string>
     <string name="date_today">Today</string>

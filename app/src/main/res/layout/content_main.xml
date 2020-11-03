@@ -300,13 +300,15 @@
         android:layout_weight="1"
         android:background="@drawable/shape">
 
-        <ImageView
+        <include
+            layout="@layout/view_logo"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:src="@mipmap/ic_launcher_round"
             android:layout_marginTop="5dp"
             android:layout_marginRight="15dp"
             android:layout_gravity="right|center"/>
+
 
         <TextView
             android:layout_width="wrap_content"

@@ -295,13 +295,14 @@
     <string name="no">@string/Cancle</string>
     <string name="ok">@string/Okey</string>
     <string name="title">عنوان</string>
+    <string name="titleNotification">ارسال هوشمند</string>
     <string name="save_menu">ذخیره</string>
     <string name="time_now">اکنون</string>
     <string name="date_today">امروز</string>
     <string name="times_shown">Shown %1$d out of %2$d times</string>
     <string name="times_shown_edit">Shown %1$d out of</string>
-    <string name="forever">تا ابد</string>
-    <string name="no_repeat">تکرار نمی کندeat</string>
+    <string name="forever">همیشه</string>
+    <string name="no_repeat">بدون تکرار</string>
     <string name="times">زمان</string>
     <string name="repeat_notification">تعداد دفعات تکرار: </string>
     <string name="content_hint">محتوای اعلان را اضافه کنید</string>
@@ -329,14 +330,14 @@
     <string name="send_email">ایمیل بفرست</string>
 
     <string-array name="repeat_array">
-        <item>تکرار نمی کند</item>
+        <item>بدون تکرار</item>
         <item>هر ساعت</item>
         <item>هر روز</item>
         <item>هر هفته</item>
         <item>هر ماه</item>
         <item>هر سال</item>
         <item>روزهای خاص هفته</item>
-        <item>پیشرفته</item>
+<!--        <item>پیشرفته</item>-->
     </string-array>
 
 </resources>

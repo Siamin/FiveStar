@@ -127,7 +127,7 @@ public class ViewActivity extends MyActivity {
     public void assignReminderValues() {
         Calendar calendar = DateAndTimeUtil.parseDateAndTime(reminder.getDateAndTime());
         notificationTitleText.setText(reminder.getTitle().split("=>")[0]);
-        contentText.setText(reminder.getContent());
+        contentText.setText(reminder.getContent().split("=>")[0]);
         if (languageHelper.getLanguage().equals(languageHelper.KeyEn)){
             dateText.setText(DateAndTimeUtil.toStringReadableDate(calendar));
         }else{

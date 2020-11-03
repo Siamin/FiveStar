@@ -104,8 +104,8 @@ public class NotificationUtil {
             NotificationCompat.Builder builder =
                     new NotificationCompat.Builder(context)
                             .setSmallIcon(R.drawable.ic_access_time_white_24dp) //set icon for notification
-                            .setContentTitle("Notifications Example") //set title of notification
-                            .setContentText("This is a notification message")//this is notification message
+                            .setContentTitle(context.getResources().getString(R.string.titleNotification)) //set title of notification
+                            .setContentText(reminder.getTitle().split("=>")[0]+" >> "+reminder.getContent().split("=>")[0])//this is notification message
                             .setAutoCancel(true) // makes auto cancel of notification
                             .setPriority(NotificationCompat.PRIORITY_DEFAULT); //set priority of notification
 
