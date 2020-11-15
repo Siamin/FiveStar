@@ -255,6 +255,7 @@ public class CreateEditActivity extends MyActivity implements ColorChooserDialog
         if (languageHelper.getLanguage().equals(languageHelper.KeyEn)) {
             dateText.setText(DateAndTimeUtil.toStringReadableDate(calendar));
         } else {
+
             String appropriateDate = persianCalendarHelper.ConvertDateMiladiToJalaliByMonthNames(reminder.getDateAndTime());
             dateText.setText(appropriateDate);
         }
@@ -532,7 +533,8 @@ public class CreateEditActivity extends MyActivity implements ColorChooserDialog
 
     @Override
     public void onDateSet(com.mohamadamin.persianmaterialdatetimepicker.date.DatePickerDialog view, int year, int monthOfYear, int dayOfMonth) {
-        int[] miladiDate = persianCalendarHelper.JalaliToMiladi(year, monthOfYear, dayOfMonth);
+        int[] miladiDate = persianCalendarHelper.JalaliToMiladi(year, monthOfYear, dayOfMonth-1);
+
         calendar.set(Calendar.YEAR, miladiDate[0]);
         calendar.set(Calendar.MONTH, miladiDate[1]);
         calendar.set(Calendar.DAY_OF_MONTH, miladiDate[2]);

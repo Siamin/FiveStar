@@ -58,7 +58,7 @@ public class PhoneNumberAdapter extends RecyclerView.Adapter<PhoneNumberAdapter.
         holder.submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String Number =holder.number.getText().toString();
+                String Number = holder.number.getText().toString();
                 if (!Number.isEmpty()){
                     sendMessage(Number,position + 1);
                 }else{
@@ -72,16 +72,25 @@ public class PhoneNumberAdapter extends RecyclerView.Adapter<PhoneNumberAdapter.
     }
 
     private void sendMessage(String number, int index) {
-        if (indexSystem >= 0){
-            int newIndex = (index < 10 ? index : 0);
-            int newPrifixCode = (index > 9 ? prifixCode + 1 : prifixCode);
-            String CodeMessage = "E" + systemModel.pinCode + newPrifixCode + newIndex  + number;
-            ((SettingActivity) context).sendMessage(CodeMessage, indexSystem + 1);
-        }else{
-            //Error set Model
-            ((SettingActivity)context).message.ErrorMessage(context.getString(R.string.selectSystem));
-
+        try {
+            Log.i(TAG,"indexSystem =>"+indexSystem);
+            if (indexSystem >= 0){
+                Log.i(TAG,"index =>"+index);
+                Log.i(TAG,"number =>"+number);
+                Log.i(TAG,"prifixCode =>"+prifixCode);
+                int newIndex = (index < 10 ? index : 0);
+                int newPrifixCode = (index > 9 ? prifixCode + 1 : prifixCode);
+                String CodeMessage = "E" + systemModel.pinCode + newPrifixCode + newIndex  + number;
+                Log.i(TAG,"step 1");
+                ((SettingActivity) context).sendMessage(CodeMessage, indexSystem + 1);
+            }else{
+                //Error set Model
+                ((SettingActivity)context).message.ErrorMessage(context.getString(R.string.selectSystem));
+            }
+        }catch (Exception e){
+            Log.i(TAG,"Error => "+e.toString());
         }
+
 
     }
 
@@ -112,21 +121,12 @@ public class PhoneNumberAdapter extends RecyclerView.Adapter<PhoneNumberAdapter.
 
 
     public void setData(SystemModel model,int indexSystem,int prifixCode){
-        try{
-            Log.i(TAG,"systemModel.pinCode =>"+systemModel.pinCode+"      indexSystem =>"+indexSystem+"      prifixCode =>"+prifixCode);
-
-        }catch (Exception e){
-            Log.i(TAG,"Error =>"+e.toString());
-
-        }
+        Log.i(TAG,"model =>"+model.pinCode);
+        Log.i(TAG,"indexSystem =>"+indexSystem);
+        Log.i(TAG,"prifixCode =>"+prifixCode);
         this.indexSystem = indexSystem;
         this.systemModel = model;
         this.prifixCode = prifixCode;
 
-        try{
-            Log.i(TAG,"systemModel.pinCode =>"+systemModel.pinCode+"      indexSystem =>"+indexSystem+"      prifixCode =>"+prifixCode);
-        }catch (Exception e){
-            Log.i(TAG,"Error =>"+e.toString());
-        }
     }
 }

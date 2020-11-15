@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
+import android.provider.CalendarContract;
 import android.transition.Fade;
 import android.transition.Transition;
 import android.transition.TransitionSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -75,28 +77,30 @@ public class ReminderAdapter extends RecyclerView.Adapter<ReminderAdapter.ViewHo
     @Override
     public void onBindViewHolder(final ViewHolder viewHolder, int position) {
         Calendar calendar = DateAndTimeUtil.parseDateAndTime(reminderList.get(position).getDateAndTime());
+        Reminder reminder = reminderList.get(position);
+
         // Show header for item if it is the first in date group
-        if (position > 0 && reminderList.get(position).getDate().equals(reminderList.get(position - 1).getDate()) ) {
+        if (position > 0 && reminder.getDate().equals(reminderList.get(position - 1).getDate()) ) {
             viewHolder.textSeparator.setVisibility(View.GONE);
         } else {
             String appropriateDate ;
             if (languageHelper.getLanguage().equals(languageHelper.KeyEn)){
                 appropriateDate = DateAndTimeUtil.getAppropriateDateFormat(context, calendar);
             }else{
-                appropriateDate = persianCalendarHelper.ConvertDateMiladiToJalaliByMonthNames(reminderList.get(position).getDateAndTime());
+                appropriateDate = persianCalendarHelper.ConvertDateMiladiToJalaliByMonthNames(reminder.getDateAndTime());
             }
 
             viewHolder.textSeparator.setText(appropriateDate);
             viewHolder.textSeparator.setVisibility(View.VISIBLE);
         }
 
-        viewHolder.title.setText(reminderList.get(position).getTitle().split("=>")[0]);
-        viewHolder.content.setText(reminderList.get(position).getContent().split("=>")[0]);
+        viewHolder.title.setText(reminder.getTitle().split("=>")[0]);
+        viewHolder.content.setText(reminder.getContent().split("=>")[0]);
         viewHolder.time.setText(DateAndTimeUtil.toStringReadableTime(calendar, context));
-        int iconResId = context.getResources().getIdentifier(reminderList.get(position).getIcon(), "drawable", context.getPackageName());
+        int iconResId = context.getResources().getIdentifier(reminder.getIcon(), "drawable", context.getPackageName());
         viewHolder.icon.setImageResource(iconResId);
         GradientDrawable bgShape = (GradientDrawable) viewHolder.circle.getDrawable();
-        bgShape.setColor(Color.parseColor(reminderList.get(position).getColour()));
+        bgShape.setColor(Color.parseColor(reminder.getColour()));
 
         viewHolder.view.setOnClickListener(new View.OnClickListener() {
             @Override

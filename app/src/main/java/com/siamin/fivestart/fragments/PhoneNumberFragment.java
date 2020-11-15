@@ -84,8 +84,6 @@ public class PhoneNumberFragment extends Fragment {
 
 
 
-
-
                     ArrayList<String> labels = new ArrayList<>();
                     labels.add(getContext().getString(R.string.TitleSmsPhoneNumber));
 
@@ -211,15 +209,14 @@ public class PhoneNumberFragment extends Fragment {
 
     private void setOption() {
         if (prifixCode == 0) {
-
             createRecycler(phoneNumberSmsModel.SmsNumber);
-
         } else if (prifixCode == 1) {
             createRecycler(phoneNumberSmsModel.TelephoneNumber);
-
         } else if (prifixCode == 2) {
             createRecycler(phoneNumberSmsModel.SimCardNumber);
         }
+
+        phoneNumberAdapter.setData(systemModel,indexSystem,prifixCode);
     }
 
 
