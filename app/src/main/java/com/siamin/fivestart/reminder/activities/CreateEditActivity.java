@@ -503,6 +503,11 @@ public class CreateEditActivity extends MyActivity implements ColorChooserDialog
             AnimationUtil.shakeView(titleEditText, this);
 
             // Check if times to show notification is too low
+        } else if (contentEditText.getText().toString().trim().isEmpty()) {
+            Snackbar.make(coordinatorLayout, R.string.toast_content_empty, Snackbar.LENGTH_SHORT).show();
+            AnimationUtil.shakeView(contentEditText, this);
+
+            // Check if times to show notification is too low
         } else if (timesToShow <= timesShown && !foreverSwitch.isChecked()) {
             Snackbar.make(coordinatorLayout, R.string.toast_higher_number, Snackbar.LENGTH_SHORT).show();
             imageWarningShow.setVisibility(View.VISIBLE);
@@ -546,5 +551,10 @@ public class CreateEditActivity extends MyActivity implements ColorChooserDialog
     @Override
     public void onTimeSet(RadialPickerLayout view, int hourOfDay, int minute) {
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }

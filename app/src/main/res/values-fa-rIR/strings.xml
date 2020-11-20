@@ -316,7 +316,8 @@
     <string name="no_inactive">اعلان غیرفعال نیست</string>
     <string name="toast_past_date">تاریخ اولیه را نمی توان در گذشته تنظیم کرد</string>
     <string name="toast_higher_number">تعداد تکرار باید بیشتر باشد</string>
-    <string name="toast_title_empty">عنوان نمی تواند خالی باشد</string>
+    <string name="toast_title_empty">سیستم نمی تواند خالی باشد</string>
+    <string name="toast_content_empty">کد کنترلی نمی تواند خالی باشد</string>
     <string name="toast_mark_as_done">یادآوری بعدی به عنوان انجام شده علامت گذاری شد</string>
     <string name="add_reminder">یادآوری اضافه کنید</string>
     <string name="libraries">کتابخانه ها</string>

@@ -11,6 +11,7 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 
 import com.siamin.fivestart.activitys.MainActivity;
 import com.siamin.fivestart.controllers.SmsController;
+import com.siamin.fivestart.helpers.MessageHelper;
 import com.siamin.fivestart.reminder.database.DatabaseHelper;
 import com.siamin.fivestart.reminder.models.Reminder;
 import com.siamin.fivestart.reminder.utils.AlarmUtil;
@@ -21,13 +22,13 @@ public class AlarmReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+
         DatabaseHelper database = DatabaseHelper.getInstance(context);
         Reminder reminder = database.getNotification(intent.getIntExtra("NOTIFICATION_ID", 0));
         reminder.setNumberShown(reminder.getNumberShown() + 1);
         database.addNotification(reminder);
 
-        SmsController sms = new SmsController(context,null);
-        sms.sendSMSMessageNotToast(reminder.getTitle().split("=>")[1],reminder.getContent().split("=> ")[1]);
+
 
         NotificationUtil.newCreateNotifation(context, reminder);
 
@@ -37,8 +38,16 @@ public class AlarmReceiver extends BroadcastReceiver {
 
         Intent updateIntent = new Intent("BROADCAST_REFRESH");
         LocalBroadcastManager.getInstance(context).sendBroadcast(updateIntent);
-        database.close();
-        Log.i("TAG_","AlarmReceiver");
+
+        //send sms
+        try{
+//            SmsController sms = new SmsController(context,new MessageHelper(context));
+//            sms.sendSMSMessageNotToast(reminder.getTitle().split("=>")[1],reminder.getContent().split("=>")[1]);
+        }catch (Exception e){
+            Log.i("TAG_","Error =>"+e.toString());
+        }finally {
+            database.close();
+        }
 
 
     }

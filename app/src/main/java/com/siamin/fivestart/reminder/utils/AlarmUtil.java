@@ -41,7 +41,7 @@ public class AlarmUtil {
 
         switch (reminder.getRepeatType()) {
             case Reminder.HOURLY:
-                calendar.add(Calendar.HOUR, reminder.getInterval());
+                calendar.add(Calendar.MINUTE, reminder.getInterval());
                 break;
             case Reminder.DAILY:
                 calendar.add(Calendar.DATE, reminder.getInterval());

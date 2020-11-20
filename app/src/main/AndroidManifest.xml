@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.siamin.fivestart">
 
+    <original-package android:name="com.android.alarmclock" />
+    <original-package android:name="com.android.deskclock" />
 
-    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
 
@@ -24,6 +27,7 @@
     <uses-permission android:name="android.permission.SEND_SMS" />
 
 
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -35,9 +39,7 @@
 
         <receiver
             android:name=".MySmsReceiver"
-            android:enabled="true"
-            android:exported="true"
-            android:logo="@mipmap/ic_launcher">
+            android:enabled="true">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
             </intent-filter>
@@ -93,7 +95,7 @@
             android:theme="@style/AppTheme.NoActionBar"/>
 
 
-        <!--        //************************************Reminder-->
+        <!-- Reminder -->
         <activity
             android:name=".reminder.activities.ReminderActivity"
             android:label="@string/app_name"
@@ -138,15 +140,16 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".reminder.receivers.AlarmReceiver" />
+        <receiver android:name=".reminder.receivers.AlarmReceiver"
+            android:enabled="true"/>
 
-        <receiver android:name=".reminder.receivers.SnoozeActionReceiver" />
+        <receiver android:name=".reminder.receivers.SnoozeActionReceiver"/>
 
-        <receiver android:name=".reminder.receivers.SnoozeReceiver" />
+        <receiver android:name=".reminder.receivers.SnoozeReceiver"/>
 
-        <receiver android:name=".reminder.receivers.DismissReceiver" />
+        <receiver android:name=".reminder.receivers.DismissReceiver"/>
 
-        <receiver android:name=".reminder.receivers.NagReceiver" />
+        <receiver android:name=".reminder.receivers.NagReceiver"/>
 
 
 
@@ -154,8 +157,14 @@
             android:name=".reminder.receivers.BootReceiver"
             android:enabled="true">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT"/>
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <!--For HTC devices-->
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+
             </intent-filter>
         </receiver>
 

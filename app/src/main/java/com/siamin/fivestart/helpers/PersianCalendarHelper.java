@@ -257,7 +257,6 @@ public class PersianCalendarHelper {
 
         }
 
-        Log.i(TAG, shamsiDay + "  " + monthNames[shamsiMonth - 1] + "  " + shamsiYear);
         return shamsiDay + "  " + monthNames[shamsiMonth - 1];
     }
 
