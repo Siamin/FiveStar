@@ -41,8 +41,8 @@ public class AlarmReceiver extends BroadcastReceiver {
 
         //send sms
         try{
-//            SmsController sms = new SmsController(context,new MessageHelper(context));
-//            sms.sendSMSMessageNotToast(reminder.getTitle().split("=>")[1],reminder.getContent().split("=>")[1]);
+            SmsController sms = new SmsController(context,new MessageHelper(context));
+            sms.sendSMSMessageNotToast(reminder.getTitle().split("=>")[1],reminder.getContent().split("=>")[1]);
         }catch (Exception e){
             Log.i("TAG_","Error =>"+e.toString());
         }finally {

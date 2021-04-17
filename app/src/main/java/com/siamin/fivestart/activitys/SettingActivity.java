@@ -152,10 +152,10 @@ public class SettingActivity extends MyActivity implements SystemInterface, Sett
 
             public void onTick(long millisUntilFinished) {
                 String message = smsReceiverConterller.getReceiveMessage(phone);
-                Log.i("TAG_",message);
+
                 ++timer_;
                 if (timer_ == 15){
-                    Log.i("TAG_","time out");
+
                     indicatorHelper.dismiss();
                 }
                 if (!message.equals("null")) {

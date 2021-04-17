@@ -6,11 +6,14 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.siamin.fivestart.R;
+import com.siamin.fivestart.activitys.SettingActivity;
 import com.siamin.fivestart.helpers.ConvertJsonHelper;
 import com.siamin.fivestart.helpers.SharedPreferencesHelper;
 import com.siamin.fivestart.helpers.ValidationHelper;
 import com.siamin.fivestart.models.ErrorModel;
 import com.siamin.fivestart.models.SystemModel;
+import com.siamin.fivestart.reminder.database.DatabaseHelper;
+import com.siamin.fivestart.reminder.models.Reminder;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -101,6 +104,9 @@ public class SystemController {
         String Json = convertJsonHelper.convertSystemModelToStrin(listModel);
 
         sp.SetCode(Key, Json);
+        if((getDefualtSystem()-1)==index){
+            setDefualtSystem(0);
+        }
 
         return new ErrorModel(context.getString(R.string.DeviceSuccessfullyDeleted), true);
 
@@ -144,7 +150,12 @@ public class SystemController {
     public void setNamesToSpinnerById(Spinner spinner) {
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(context, R.layout.view_spinner, getSystemNames());
         spinner.setAdapter(adapter);
-        spinner.setSelection(getDefualtSystem());
+        try{
+            spinner.setSelection(getDefualtSystem());
+        }catch (Exception e){
+
+        }
+
     }
 
     public void setCodeToSpinnerById(Spinner spinner, boolean status) {

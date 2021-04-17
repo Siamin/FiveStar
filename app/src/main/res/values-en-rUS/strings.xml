@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">FiveStar</string>
-    <string name="companyName">Five Star</string>
+    <string name="app_name">Five Star General</string>
+    <string name="companyName">Five Star General</string>
     <string name="mainDescription">security system</string>
     <string name="Inquiry">Inquiry</string>
     <string name="All">All</string>
@@ -46,6 +46,8 @@
     <string name="errorChangePassword">Error performing password change</string>
     <string name="errorSetPassword">Error performing password set</string>
     <string name="errorRemovePassword">Error performing password set</string>
+    <string name="errorTheFeatureIsNotEnabled">The feature is not enabled for this device</string>
+
 
     <string name="succssesPassword">Your password was registered.</string>
     <string name="numberOfPasswordCharacters">The number of password characters must be more than 5</string>
@@ -292,6 +294,8 @@
     <string name="no">No</string>
     <string name="ok">OK</string>
     <string name="title">Title</string>
+    <string name="titleDialogPermission">Cancel battery optimizations?</string>
+    <string name="bodyDialogPermission">Allow the smart app to stay connected in the background?</string>
     <string name="titleNotification">Automatically</string>
     <string name="save_menu">Save</string>
     <string name="time_now">Now</string>

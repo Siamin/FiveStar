@@ -48,5 +48,17 @@ public class SharedPreferencesHelper  {
     }
 
 
+    public boolean getBoolean(String name, boolean Null){
+        sp = context.getSharedPreferences(packages, 0);
+        return sp.getBoolean(name, Null);
+    }
+
+    public void setBoolean(String name, boolean value){
+        sp = context.getSharedPreferences(packages, 0);
+        SharedPreferences.Editor edit = sp.edit();
+        edit.putBoolean(name, value);
+        edit.commit();
+    }
+
 
 }

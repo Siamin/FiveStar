@@ -1,6 +1,7 @@
 package com.siamin.fivestart.reminder.activities;
 
 import android.content.BroadcastReceiver;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -71,6 +72,7 @@ public class ViewActivity extends MyActivity {
         setContentView(R.layout.activity_view);
         initView();
         setupTransitions();
+
 
         setSupportActionBar(toolbar);
         toolbar.setNavigationIcon(R.drawable.ic_baseline_arrow_back_ios_24);

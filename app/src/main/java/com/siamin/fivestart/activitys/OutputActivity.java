@@ -105,7 +105,6 @@ public class OutputActivity extends MyActivity implements SwitchInterface,Blueto
             dataSend += model.pinCode;
             if (statusSwitchs) {
                 dataController.sender(dataSend);
-                Log.i("TAG_", dataSend);
             } else {
                 sendSMS(model.phoneNumber, dataSend);
             }
@@ -124,7 +123,7 @@ public class OutputActivity extends MyActivity implements SwitchInterface,Blueto
                 ++timer_;
                 String message = smsReceiverConterller.getReceiveMessage(phone);
                 if (timer_ == 15){
-                    Log.i("TAG_","time out");
+
                     indicatorHelper.dismiss();
                 }
                 if (!message.equals("null")) {
@@ -155,7 +154,6 @@ public class OutputActivity extends MyActivity implements SwitchInterface,Blueto
         for (int i = 0; i < messages.length; i++) {
             if (messages[i].startsWith(" OUT")) {
                 listInquiry.add((messages[i].split(":")[1]).replace(" ", "").equals("OFF") ? false : true);
-                Log.i("TAG_", "Mesage => " + messages[i].split(":")[1]);
             }
         }
         createRecycler(Count, listInquiry);

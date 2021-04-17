@@ -65,13 +65,18 @@ public class TextMessagesFragment extends Fragment {
 
                     ArrayList<String> labels = new ArrayList<>();
 
-                    if (modelName.equals("GSA-208") || modelName.equals("GSA-209")) {
-                        labels.add("A");
-                        updateRecyclerView(getListDefualtA());
-                    }
+                    if(!modelName.equals("GSA-209") && !modelName.equals("other") ){
+                        if (modelName.equals("GSA-208")) {
+                            labels.add("A");
+                            updateRecyclerView(getListDefualtA());
+                        }
 
-                    labels.add("B");
-                    toggleSwitch.setLabels(labels);
+                        labels.add("B");
+                        toggleSwitch.setLabels(labels);
+                    }else{
+                        ((SettingActivity)getContext()).message.ErrorMessage(getContext().getResources().getString(R.string.errorTheFeatureIsNotEnabled));
+                        recyclerView.setVisibility(View.GONE);
+                    }
 
                 }else{
                     toggleSwitch.setVisibility(View.GONE);

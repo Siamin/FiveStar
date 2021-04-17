@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">FiveStar</string>
-    <string name="companyName">Five Star</string>
+    <string name="app_name">Five Star General</string>
+    <string name="companyName">Five Star General
+    </string>
     <string name="mainDescription">صنایع امنیتی و حفاظتی</string>
     <string name="Inquiry">استعلام</string>
     <string name="All">همه</string>
@@ -19,9 +20,9 @@
     <string name="pageNameFirstSetting">تنظیمات</string>
     <string name="systemName">نام سیستم</string>
     <string name="phoneNumber">شماره تلفن</string>
-    <string name="pinCode">پین کد</string>
-    <string name="pinNewCode">پین کد جدید</string>
-    <string name="pinConfirmCode">تکرار پین کد جدید</string>
+    <string name="pinCode">کد کنترلی</string>
+    <string name="pinNewCode">کد کنترلی جدید</string>
+    <string name="pinConfirmCode">تکرار کد کنترلی جدید</string>
     <string name="register">ثبت</string>
     <string name="titleFirstSetting">@string/pageNameFirstSetting</string>
     <string name="firstRunDialogBtnOk">فعال</string>
@@ -47,6 +48,7 @@
     <string name="errorChangePassword">خطا در انجام تغییر رمز عبور</string>
     <string name="errorSetPassword">خطا در انجام تنظیم رمز عبور</string>
     <string name="errorRemovePassword">خطا در انجام حذف رمز عبور</string>
+    <string name="errorTheFeatureIsNotEnabled">ویژگی برای این دستگاه فعال نیست</string>
 
     <string name="succssesPassword">رمز ورود شما ثبت شد</string>
     <string name="numberOfPasswordCharacters">تعداد کاراکترهای رمز عبور باید بیش از 5 باشد</string>
@@ -293,6 +295,8 @@
     <string name="no">@string/Cancle</string>
     <string name="ok">@string/Okey</string>
     <string name="title">عنوان</string>
+    <string name="titleDialogPermission">بهینه سازی های باتری لغو شوند؟</string>
+    <string name="bodyDialogPermission"> به برنامه ارسال هوشمند اجازه داده شود در پس زمینه متصل بماند؟ممکن است باعث مصرف بیشتر باتری شود.</string>
     <string name="titleNotification">ارسال هوشمند</string>
     <string name="save_menu">ذخیره</string>
     <string name="time_now">اکنون</string>

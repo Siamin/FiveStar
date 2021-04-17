@@ -1,5 +1,7 @@
 package com.siamin.fivestart.reminder.activities;
 
+import android.content.ComponentName;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.TypedValue;
@@ -14,6 +16,7 @@ import com.astuetz.PagerSlidingTabStrip;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.siamin.fivestart.R;
 import com.siamin.fivestart.activitys.MainActivity;
+import com.siamin.fivestart.helpers.SharedPreferencesHelper;
 import com.siamin.fivestart.reminder.adapters.ReminderAdapter;
 import com.siamin.fivestart.reminder.adapters.ViewPageAdapter;
 
@@ -25,7 +28,7 @@ public class ReminderActivity extends AppCompatActivity implements ReminderAdapt
     Toolbar toolbar;
     ViewPager viewPager;
     FloatingActionButton floatingActionButton;
-
+    SharedPreferencesHelper sp;
     private boolean fabIsHidden = false;
 
     @Override
@@ -35,6 +38,20 @@ public class ReminderActivity extends AppCompatActivity implements ReminderAdapt
         setContentView(R.layout.activity_reminder);
 
         initView();
+
+        if("huawei".equalsIgnoreCase(android.os.Build.MANUFACTURER) && !sp.getBoolean("protected",false)) {
+            android.app.AlertDialog.Builder builder  = new android.app.AlertDialog.Builder(this);
+            builder.setTitle(R.string.titleDialogPermission).setMessage(R.string.bodyDialogPermission)
+                    .setPositiveButton(R.string.Okey, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            Intent intent = new Intent();
+                            intent.setComponent(new ComponentName("com.huawei.systemmanager", "com.huawei.systemmanager.optimize.process.ProtectActivity"));
+                            startActivity(intent);
+                            sp.setBoolean("protected",true);
+                        }
+                    }).setNegativeButton(R.string.Cancle,null).create().show();
+        }
 
         setSupportActionBar(toolbar);
         if (getSupportActionBar() != null) {
@@ -71,6 +88,8 @@ public class ReminderActivity extends AppCompatActivity implements ReminderAdapt
         toolbar = findViewById(R.id.toolbar);
         viewPager = findViewById(R.id.viewpager);
         floatingActionButton = findViewById(R.id.fab_button);
+
+        sp = new SharedPreferencesHelper(this);
     }
 
 

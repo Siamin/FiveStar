@@ -95,6 +95,7 @@ public class ReminderAdapter extends RecyclerView.Adapter<ReminderAdapter.ViewHo
         }
 
         viewHolder.title.setText(reminder.getTitle().split("=>")[0]);
+        Log.i("TAG_Reminder","Title : "+reminder.getTitle());
         viewHolder.content.setText(reminder.getContent().split("=>")[0]);
         viewHolder.time.setText(DateAndTimeUtil.toStringReadableTime(calendar, context));
         int iconResId = context.getResources().getIdentifier(reminder.getIcon(), "drawable", context.getPackageName());
